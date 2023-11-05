@@ -1,0 +1,14 @@
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: vmotiono01
+  description: Identify_running_host_and_vmotion
+  annotations:
+    backstage.io/kubernetes-id: vmotiono01
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: neenspa/vmotiono01
+spec:
+  type: api
+  lifecycle: production
+  owner: amargheritini

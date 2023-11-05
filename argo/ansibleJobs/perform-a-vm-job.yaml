@@ -1,0 +1,12 @@
+---
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleJob
+metadata:
+  name: perform-a-vm-job
+  namespace: aap
+spec:
+  connection_secret: aapaccess
+  job_template_name: Identify_running_host_and_vmotion
+  extra_vars: {
+"vm_name": "terraform-test12"
+}
